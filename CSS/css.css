@@ -1,0 +1,731 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	background-color:#FAEEFF;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Syne Mono', monospace;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 19px;
+	line-height: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: black !important;
+}
+
+body {
+	margin: 0;
+	
+}
+
+
+.left {
+	float: left;
+	}
+
+.right {
+	
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.margin {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#header {
+	position: fixed;
+    width: 100%;
+background: linear-gradient(0deg, rgba(250,238,255,0) 0%, rgba(250,238,255,0.8) 34%, rgba(250,238,255,1) 100%);
+	z-index: 1;
+}
+
+
+
+#content {
+	height: auto !important;
+    height: 100%;
+	background-color:#FAEEFF;
+}
+
+
+
+.background_img {
+	height: 990px;
+	background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5368522408963585) 100%), url("../img/stonewall-anniversary.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
+	margin: 0 auto; 
+}
+
+.quote_carosel {
+	position: absolute;
+    text-align: left;
+    bottom: 20%;
+	left: 10%;
+	right: 30%;
+	color: #FAEEFF;
+	font-family: 'Roboto', sans-serif;
+}
+
+.quote {
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	color: black;
+	top: 100px;
+	width: 75%;
+	margin-top: 100px;
+}
+
+.row {
+	height: 50%;
+}
+
+.big_quote {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.big_cit {
+	font-size: 20px;
+	font-style: italic;
+	line-height: 40px;
+}
+
+.car_hr {
+	border: 1px solid #FAEEFF;
+  	border-radius: 25%;
+	opacity: 1;
+	width: 30%;
+}
+
+.hr {
+	border: 1px solid;
+	border-radius: 25%;
+	opacity: 1;
+	width: 30%;
+}
+
+.nav_style {
+	background-color:rgba(250,238,255,0.8) !important;
+	font-family: 'Syne Mono', monospace;
+	font-size: 25px;
+	margin-left: 20px;
+	border: none;
+	padding: 0 5PX !important;
+	
+}
+
+:hover.nav_style {
+	border-bottom: solid 1px black !important;
+}
+
+.nav_logo {
+	background-color: #FAEEFF;
+	opacity: 0.7;
+	font-family: 'Syne Mono', monospace;
+	padding: 5px;
+	
+}
+
+.row-col-lg-12 {
+	margin-top: 20px;
+	padding: 0 !important;
+}
+
+.logo {
+	height: 100px;
+}
+
+.nav_hr {
+	
+	border: 1px solid;
+  	border-radius: 5%;
+	opacity: 1;
+}
+
+.arrow {
+    opacity: 0;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+
+.arrow-first {
+    animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: #FAEEFF;
+    content: '';
+    display: block;
+    height: 3px; 
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 30px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+
+@keyframes arrow-movement {
+    0% { 
+        opacity: 0;
+        top: 45%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+
+.swipe {
+	width: 100px;
+	height: 30px;
+	margin-left: 20px;
+}
+
+.see_more {
+	position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    right: 10%;
+	scroll-behavior: smooth;
+}
+
+.n_m {
+	margin-left: 0px !important;
+}
+
+.swipe_button {
+	margin-bottom: 80px;
+	margin-top: 30px;
+}
+
+.two_colums {
+	width: 50%;
+	height: auto;
+}
+
+.tre_colums {
+	width: 30%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.right_bord{
+	border-right: 1px solid #000000;
+}
+
+.bottom_bord{
+	border-bottom: 1px solid #000000;
+}
+
+.short_b_board{
+	height: 77px;
+    width: 150px;
+	border-bottom: 1px solid #000000;
+}
+
+.up_side {
+	height: 77px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.down_side {
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-right: 15px;
+}
+
+.continuous {
+	margin-top: 0px !important;
+	padding-top: 80px;
+}
+
+.row_in {
+	height: auto;
+}
+
+
+
+.img_lit {
+	background: url("../img/sub-buzz-24565-1559160365-1.jpg");
+	width: 100%;
+	height: 500px;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	margin: 0 auto; 
+}
+
+
+
+
+.card {
+	position: inherit;
+	border-radius: 5%;
+	background-color: aqua;
+	width: 30.333%;
+	height: 530px;
+	margin: 1.4%;
+	outline: 1px black solid;
+	outline-offset: 10px;
+}
+
+.card_two {
+	position: inherit;
+	border-radius: 5%;
+	background-color: aqua;
+	width: 46.3%;
+	height: 300px;
+	margin: 1.8%;
+	outline: 1px black solid;
+	outline-offset: 10px;
+}
+
+.uno {
+	background: url("../img/resolver.jpeg");
+	background-size:cover;
+	background-position: center center;
+}
+
+
+
+.due {
+	background: url("../img/MV5BODU2YTlhYTUtNDYyYi00NzdkLTk5NzctYjRkN2I4NDBjZmFhXkEyXkFqcGdeQXVyMjIzMTQ5NjE@._V1_.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+}
+
+.tre {
+	background: url("../img/judy-garland.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.quattro {
+	background: url("../img/FEATURED-IMAGE-2-FULL-MOON-OVER-STONEWALL.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.cinque {
+	background: url("../img/sylvia-still-1973.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.sei {
+	background: url("../img/gayatri-malhotra-vZpMXSB3qwU-unsplash.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.sette {
+	background: url("../img/1969_0703_01_STONEWALL-COVERAGE_OP-1366x1975.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.otto {
+	background: url("../img/drag-race-1607538285.jpg.png");
+	background-size:cover;
+	background-position: center center;
+ 	background-repeat: no-repeat;
+}
+
+.nove {
+	background: url("../img/index.php.jpeg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.dieci {
+	background: url("../img/photo3jpg.jpg");
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.over_text {
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 5%;
+	width: 100%;;
+	height: 100%;
+	padding: 40px;
+	color: #FAEEFF;
+}
+
+.over_text h4, hr, p {
+	opacity: 1 !important;
+}
+
+.one {
+	display: none;
+}
+
+.ten {
+	display: none;
+}
+
+.nine {
+	display: none;
+}
+
+.eight {
+	display: none;
+}
+
+.seven {
+	display: none;
+}
+
+.six {
+	display: none;
+}
+
+.five {
+	display: none;
+}
+
+.four {
+	display: none;
+}
+
+.three {
+	display: none;
+}
+
+.two {
+	display: none;
+}
+
+.project {
+	margin-top: 0px;
+}
+
+
+
+.height {
+	height: 300px;
+}
+
+.contacts {
+	background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5368522408963585) 100%), url("../img/stonewall-05.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	width: 100%;
+	height: auto;
+	color: #FAEEFF;
+	padding: 0px 0 20px 0px;
+}
+
+.under_line {
+	background-color: #FAEEFF;
+	opacity: 0.7;
+	font-family: 'Syne Mono', monospace;
+	color: black;
+	width: auto;
+}
+
+.persons {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: aqua;
+}
+
+.person_colum {
+	width: 33.333%;
+	padding: 0 50px;
+	
+}
+
+.circle_c {
+	width: 60%;
+	height: 200px;
+	border: #FAEEFF solid 1px;
+	border-radius: 50%;
+	background: url("../img/chiara.jpeg");
+	background-size: contain;
+	background-position: center;
+	margin: 20px auto;
+}
+
+.circle_gio {
+	width: 60%;
+	height: 200px;
+	border: #FAEEFF solid 1px;
+	border-radius: 50%;
+	background: url("../img/giorgia.jpeg");
+	background-size: contain;
+	background-position: center;
+	margin: 20px auto;
+}
+
+.circle_giu {
+	width: 60%;
+	height: 200px;
+	border: #FAEEFF solid 1px;
+	border-radius: 50%;
+	background: url("../img/Schermata 2021-04-01 alle 02.57.51.png");
+	background-size: contain;
+	background-position: center;
+	margin: 20px auto;
+}
+
+.social_icons {
+	width: 60%;
+	margin: 10px auto;
+}
+
+.icon {
+    width: 10%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.center {
+	margin-top: 50px;
+	text-align: left;
+}
+
+.adj {
+	height: 50px;
+}
+
+.special {
+	padding: 22% 0;
+}
+
+.iconsocial {
+	width: 25%;
+    margin: 0 auto;
+    padding: 0 10px;
+    align-content: center;
+}
+
+.specialsocial {
+	padding: 10% 0;
+}
+
+.specialmap {
+	padding: 5% 0;
+}
+
+.specialtext {
+	font-size: 16px !important;
+	margin-left: 0px !important;
+}
+
+.width_100 {
+	width: 100% !important;
+}
+
+.big {
+	font-size: 33px;
+	margin: 0 !important;
+	color: black;
+}
+
+.medium {
+	font-size: 20px;
+	margin: 0 !important;
+	color: black;
+}
+
+.smal {
+	font-size: 16px;
+	margin: 0 !important;
+	color: black;
+}
+
+.item_block {
+	height: auto;
+	width: auto;
+	margin: 0 auto;
+}
+
+
+.big_cel{
+	width: 300px;
+}
+.cel {
+	padding: 20px 8px !important;
+}
+
+.contact_icons {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.contact_colum {
+	width: 100%;
+}
+.tel {
+	padding: 0 10px 3px;
+}
+
+.icon_text {
+	width: 90%;
+	padding-right: 10px;
+}
+
+
+
+.text_align {
+	text-align: center;
+	line-height: 25px;
+}
+
+.icon_margin {
+	margin-left: 15px;
+}
+
+.scaled-frame {
+	border: solid 1px rgba(0,0,0,1.00);
+	
+	background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5368522408963585) 100%);
+}
+
+.short_table {
+	margin-top: 9px;
+	width: 90% !important;
+}
+
+.menu_sotto {
+	background-color: rgba(250,238,255,0.8) !important;
+	font-family: 'Syne Mono', monospace!important;
+	border: none !important;
+	width: 225px;
+}
+
+
+
+.dropdown-style {
+	padding-left: 20px;
+	width: 100%;
+}
+
+:hover.dropdown-style {
+	border-bottom: 1px solid black;
+}
+
+.hal {
+	height: 170px;
+}
+
+.margin_piccolo {
+	margin-top: 20px;
+}
+
+.margin_medio {
+	margin-top: 80px;
+}
+
+.margin_grande {
+	
+	margin-top: 150px;
+}
+
+
+
+.padding_grande {
+	padding-top: 160px;
+}
+
+.padding_piccolo {
+	padding-top: 30px;
+}
+
+.padding_medio {
+	padding-top: 80px;
+}
+
+
+
+
+
+.button {
+	padding-bottom: 80px;
+}
+
+
+
+.img_desc{
+	padding-top: 39px;
+	padding-right: 10px;
+	width: 40%;
+	height: 500px;
+}
+
+.tab30 {
+	width: 60%;
+}
+
+.row_o {
+	width: 100%;
+}
+
+.padding_cont {
+	padding-top: 110px;
+}
+
+.code {
+	overflow:scroll; 
+	height:500px;
+	width: 95%;
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid black;  
+}
+
+.bottom {
+	padding-bottom: 100px;
+}
